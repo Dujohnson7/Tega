@@ -1,1 +1,1 @@
-echo "frontend/tegaPortal/node_modules/" >> .gitignore
+echo "frontend/tegaPortal/node_modules/" >> .gitignorefrontend/tegaPortal/node_modules/
