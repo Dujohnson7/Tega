@@ -45,7 +45,7 @@ function PrivateRoute({ component: Component, ...rest }) {
 
 export default function Admin() {
   const location = useLocation();
-  const isDashboard = location.pathname === "/admin";
+  const isDashboard = location.pathname === "/admin/dashboard";
    
   const getPageTitle = () => {
     if (location.pathname.includes("/admin/express")) return "Express Management";
