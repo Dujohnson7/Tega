@@ -13,7 +13,8 @@ WORKDIR /app/tegaportal
 COPY frontend/tegaPortal/package*.json ./
 RUN npm ci
 COPY frontend/tegaPortal/ ./
-RUN chmod +x node_modules/.bin/* && npx react-scripts build
+RUN npm run build
+#RUN chmod +x node_modules/.bin/* && npx react-scripts build
 
 # Backend build stage
 FROM openjdk:17-jdk-slim AS backend-builder
