@@ -77,7 +77,7 @@ export default function Admin() {
         
         <div className="px-4 md:px-10 mx-auto w-full -mt-24">
           <Switch>
-            <PrivateRoute path="/admin" exact component={Dashboard} /> 
+            <PrivateRoute path="/admin/dashboard" exact component={Dashboard} /> 
             <PrivateRoute path="/admin/settings" exact component={Settings} /> 
             <PrivateRoute path="/admin/express" exact component={Express} />
             <PrivateRoute path="/admin/users" exact component={Users} />
@@ -99,7 +99,7 @@ export default function Admin() {
             <PrivateRoute path="/admin/schedules/edit/:id" component={ScheduleEdit} />
             <PrivateRoute path="/admin/tickets/edit/:id" component={TicketEdit} />
 
-            <Redirect from="/" to="/admin" />
+            <Redirect from="/" to="/admin/dashboard" />
           </Switch>
           <FooterAdmin />
         </div>
