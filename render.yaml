@@ -5,7 +5,7 @@ services:
     runtime: docker
     plan: starter
     dockerfilePath: ./Dockerfile
-    repo: https://github.com/dujohnson7/TegaBus.git
+    repo: https://github.com/dujohnson7/Tega.git
     branch: main
     envVars:
       - key: PORT
