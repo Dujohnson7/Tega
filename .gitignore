@@ -1,2 +1,1 @@
 echo "frontend/tegaPortal/node_modules/" >> .gitignore
-git add .gitignore
